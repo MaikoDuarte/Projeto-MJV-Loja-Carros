@@ -1,0 +1,14 @@
+[
+  {
+    "Marca": "Toyota",
+    "Modelo": "Corolla",
+    "Ano": 2020,
+    "Cor": "azul"
+  },
+  {
+    "Marca": "Honda",
+    "Modelo": "civic",
+    "Ano": 2000,
+    "Cor": "preto"
+  }
+]
