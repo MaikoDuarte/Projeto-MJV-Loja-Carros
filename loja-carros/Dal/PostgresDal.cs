@@ -11,13 +11,8 @@ namespace loja_carros.Dal
 
         public PostgresDAL()
         {
-            
-            
             strConnection += $";Database={dbName}";
-          
         }
-
-       
 
         public List<Carro> ListarCarros()
         {
