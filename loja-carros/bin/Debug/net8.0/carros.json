@@ -4,5 +4,77 @@
     "Modelo": "Corolla",
     "Ano": 2020,
     "Cor": "azul"
+  },
+  {
+    "Marca": "Honda",
+    "Modelo": "civic",
+    "Ano": 2000,
+    "Cor": "preto"
+  },
+  {
+    "Marca": "Fiat",
+    "Modelo": "Palio",
+    "Ano": 2005,
+    "Cor": "prata"
+  },
+  {
+    "Marca": "Fiat",
+    "Modelo": "Palio",
+    "Ano": 2005,
+    "Cor": "prata"
+  },
+  {
+    "Marca": "Fiat",
+    "Modelo": "Palio",
+    "Ano": 2005,
+    "Cor": "prata"
+  },
+  {
+    "Marca": "volkswagen",
+    "Modelo": "T-Cross",
+    "Ano": 2020,
+    "Cor": "azul"
+  },
+  {
+    "Marca": "Chevrolet",
+    "Modelo": "Onix",
+    "Ano": 2020,
+    "Cor": "branco"
+  },
+  {
+    "Marca": "Toyota",
+    "Modelo": "civic",
+    "Ano": 1999,
+    "Cor": "azul"
+  },
+  {
+    "Marca": "Chevrolet",
+    "Modelo": "omega",
+    "Ano": 1995,
+    "Cor": "preto"
+  },
+  {
+    "Marca": "Chevrolet",
+    "Modelo": "sonic",
+    "Ano": 2010,
+    "Cor": "prata"
+  },
+  {
+    "Marca": "Chevrolet",
+    "Modelo": "s10",
+    "Ano": 2023,
+    "Cor": "branco"
+  },
+  {
+    "Marca": "Land Rover",
+    "Modelo": "Evoque",
+    "Ano": 2015,
+    "Cor": "prata"
+  },
+  {
+    "Marca": "Toyota",
+    "Modelo": "Prius",
+    "Ano": 2020,
+    "Cor": "dourado"
   }
 ]

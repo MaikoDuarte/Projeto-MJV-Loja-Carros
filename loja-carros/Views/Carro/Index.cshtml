@@ -1,33 +1,41 @@
-﻿@model List<Carro>
+﻿@model List<loja_carros.Models.Carro>
 
-<div>
-    <h1>Agência de Carros</h1>
+<div class="text-center">
+    <div class="d-grid gap-0=2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Carro" asp-action="CadastrarCarro">Adicionar novo carro</a>
+    </div>
 </div>
-<form asp-controller="Carro" asp-action="Index" method="post" id="meuForm">
 
-    <div>
-        <label>Marca:</label>
-        <input type="text" name="Marca" />
-    </div>
-    <div>
-        <label>Modelo:</label>
-        <input type="text" name="Modelo" />
-    </div>
-    <div>
-        <label>Ano:</label>
-        <input type="text" name="Ano" />
-    </div>
-    <div>
-        <label>Cor:</label>
-        <input type="text" name="Cor" />
-    </div>
-
-    <div>
-        <input type="submit" value="Salvar" />
-    </div>
-</form>
-
-    <div>
-        <p>@ViewBag.Mensagem</p>
-    </div>
-}
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Ano</th>
+        <th scope="col">Cor</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var carro in Model)
+    {
+        <tr>
+            <th scope="row">@carro.Id</th>
+            <td>@carro.Modelo</td>
+            <td>@carro.Marca</td>
+           
+            <td>@carro.Ano</td>
+            <td>@carro.Cor</td>
+            <td>@carro.Preco</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Ações">
+                    <a role="button" class="btn btn-secondary" asp-controller="Carro" asp-action="EditarCarro" asp-route-id="@carro.Id">Editar</a>
+                    <a role="button" class="btn btn-secondary" asp-controller="Carro" asp-action="DeletarCarro" asp-route-id="@carro.Id">Apagar</a>
+                </div>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

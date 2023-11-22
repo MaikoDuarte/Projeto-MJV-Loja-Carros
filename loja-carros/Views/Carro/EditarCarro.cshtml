@@ -1,0 +1,40 @@
+﻿@model loja_carros.Models.Carro
+
+<h1>Atualizar Carro</h1>
+
+<form asp-controller="Carro" asp-action="AtualizarCarro" method="post">
+        <div>
+            <label asp-for="Id">Id:</label>
+            <input asp-for="Id" />
+        </div>
+    
+    <div>
+        <label asp-for="Marca">Marca:</label>
+        <input asp-for="Marca" />
+    </div>
+    
+    <div>
+        <label asp-for="Modelo">Modelo:</label>
+        <input asp-for="Modelo" />
+    </div>
+    
+    <div>
+        <label asp-for="Ano">Ano:</label>
+        <input asp-for="Ano" />
+    </div>
+    
+    <div>
+        <label asp-for="Cor">Cor:</label>
+        <input asp-for="Cor" />
+    </div>
+    
+    <div>
+        <label asp-for="Preco">Preço:</label>
+        <input asp-for="Preco" />
+    </div>
+    
+    <div>
+        <input type="submit" value="Atualizar" />
+        <input type="submit" value="Cancelar" asp-controller="Carro" asp-action="Index" />
+    </div>
+</form>

@@ -9,47 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mjv_aula_10
 build_property.RootNamespace = mjv_aula_10
-build_property.ProjectDir = C:\Users\maiko\MJV-SCHOOL-NET\mjv-aula-10\loja-carros\
+build_property.ProjectDir = C:\Users\maiko\MJV-SCHOOL-NET\loja_carros\loja-carros\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\maiko\MJV-SCHOOL-NET\mjv-aula-10\loja-carros
+build_property.MSBuildProjectDirectory = C:\Users\maiko\MJV-SCHOOL-NET\loja_carros\loja-carros
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Carro/Index.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Carro/CadastrarCarro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cQ2FkYXN0cmFyQ2Fycm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Carro/DeletarCarro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cRGVsZXRhckNhcnJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Carro/EditarCarro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cRWRpdGFyQ2Fycm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Carro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Carro/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Shared/Error.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Shared/_Modelo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb2RlbG8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/_ViewImports.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/_ViewStart.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maiko/MJV-SCHOOL-NET/mjv-aula-10/loja-carros/Views/Shared/_Layout.cshtml]
+[C:/Users/maiko/MJV-SCHOOL-NET/loja_carros/loja-carros/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zn5hwrcge6

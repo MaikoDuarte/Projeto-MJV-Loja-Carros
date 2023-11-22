@@ -12,6 +12,30 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="Views\Shared\_Modelo.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="loteria">
+        <HintPath>..\..\loteria\obj\Debug\net8.0\loteria.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="bootstrap" Version="5.3.2" />
+      <PackageReference Include="JavaScriptEngineSwitcher.V8" Version="3.23.2" />
+      <PackageReference Include="Microsoft.ClearScript.V8.Native.win-x64" Version="7.4.4" />
+      <PackageReference Include="Npgsql" Version="8.0.0-rc.2" />
+      <PackageReference Include="React.Web.Mvc4" Version="5.2.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Models\Contexto.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,10 @@
+using loja_carros.Dal;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<PostgresDAL>();
 
 var app = builder.Build();
 

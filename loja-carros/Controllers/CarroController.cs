@@ -1,44 +1,80 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
-using mjv_aula_10.Models;
+﻿using loja_carros.Dal;
+using Microsoft.AspNetCore.Mvc;
+using loja_carros.Models;
+using System;
 
 public class CarroController : Controller
 {
-    private const string filePath = "carros.json";
+    private readonly PostgresDAL _postgresDal;
+
+    public CarroController(PostgresDAL postgresDal)
+    {
+        _postgresDal = postgresDal;
+    }
 
     public IActionResult Index()
     {
-        List<Carro> carros = LerDadosDoArquivo();
+        var carros = _postgresDal.ListarCarros();
         return View(carros);
     }
 
+    public IActionResult CadastrarCarro()
+    {
+        return View();
+    }
+
     [HttpPost]
-    public IActionResult Index(Carro carro)
+    public IActionResult EnviarCarro(Carro carro)
     {
         if (ModelState.IsValid)
         {
             ViewBag.Mensagem = "Formulário enviado. Carro salvo com sucesso!";
-            SalvarDadosNoArquivo(carro);
+            _postgresDal.InserirCarro(carro.Id,carro.Marca, carro.Modelo, carro.Ano, carro.Cor, carro.Preco);
         }
 
+        return RedirectToAction("Index");
+    }
+    
+    public IActionResult EditarCarro(int id)
+    {
+        return View();
+
+    }
+
+    [HttpPost]
+    public IActionResult AtualizarCarro(Carro carro)
+    {
+        if (ModelState.IsValid)
+        {
+            _postgresDal.AtualizarCarro(carro.Id, carro.Marca, carro.Modelo, carro.Ano, carro.Cor, carro.Preco);
+        }
+
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult DeletarCarro(int id)
+    {
+        var carro = _postgresDal.SelecionarCarro(id);
+
+        if (carro == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        return View(carro);
+    }
+
+    [HttpPost]
+    public IActionResult ExcluirCarroConfirmado(int id)
+    {
+        _postgresDal.DeletarCarro(id);
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Privacy()
+    {
         return View();
     }
 
-    private List<Carro> LerDadosDoArquivo()
-    {
-        if (System.IO.File.Exists(filePath))
-        {
-            string jsonContent = System.IO.File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<List<Carro>>(jsonContent);
-        }
-        return new List<Carro>();
-    }
 
-    private void SalvarDadosNoArquivo(Carro carro)
-    {
-        List<Carro> carros = LerDadosDoArquivo();
-        carros.Add(carro);
-        string jsonContent = JsonSerializer.Serialize(carros, new JsonSerializerOptions { WriteIndented = true });
-        System.IO.File.WriteAllText(filePath, jsonContent);
-    }
 }

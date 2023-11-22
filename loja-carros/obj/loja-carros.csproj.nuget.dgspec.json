@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maiko\\MJV-SCHOOL-NET\\mjv-aula-10\\loja-carros\\loja-carros.csproj": {}
+    "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\loja-carros.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maiko\\MJV-SCHOOL-NET\\mjv-aula-10\\loja-carros\\loja-carros.csproj": {
+    "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\loja-carros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\mjv-aula-10\\loja-carros\\loja-carros.csproj",
+        "projectUniqueName": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\loja-carros.csproj",
         "projectName": "loja-carros",
-        "projectPath": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\mjv-aula-10\\loja-carros\\loja-carros.csproj",
+        "projectPath": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\loja-carros.csproj",
         "packagesPath": "C:\\Users\\maiko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\mjv-aula-10\\loja-carros\\obj\\",
+        "outputPath": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "JavaScriptEngineSwitcher.V8": {
+              "target": "Package",
+              "version": "[3.23.2, )"
+            },
+            "Microsoft.ClearScript.V8.Native.win-x64": {
+              "target": "Package",
+              "version": "[7.4.4, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2, )"
+            },
+            "React.Web.Mvc4": {
+              "target": "Package",
+              "version": "[5.2.12, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
