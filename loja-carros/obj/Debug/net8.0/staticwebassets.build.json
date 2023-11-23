@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UpEgyF2i+PhlqdhPt1mxZQjL6nPhSDiaRKb8YSSrYOQ=",
+  "Hash": "pb+fCsxiMn1UJ3Jqtpda1qVxzCTGkAW1zQk09pLIFQ4=",
   "Source": "loja-carros",
   "BasePath": "_content/loja-carros",
   "Mode": "Default",
@@ -889,6 +889,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\loja-carros.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\wwwroot\\css\\mycss.css",
+      "SourceId": "loja-carros",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\wwwroot\\",
+      "BasePath": "_content/loja-carros",
+      "RelativePath": "css/mycss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mycss.css"
     },
     {
       "Identity": "C:\\Users\\maiko\\MJV-SCHOOL-NET\\loja_carros\\loja-carros\\wwwroot\\css\\site.css",
