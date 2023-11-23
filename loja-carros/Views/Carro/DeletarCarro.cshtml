@@ -1,40 +1,40 @@
 ﻿@model loja_carros.Models.Carro
 
-<h1>Excluir Carro</h1>
+<h2>Deletar Veículo</h2>
 
 <form asp-controller="Carro" asp-action="ExcluirCarroConfirmado" method="post">
     <input type="hidden" asp-for="Id" />
     
-    <p>Você tem certeza de que deseja excluir este carro?</p>
+    <p>Você tem certeza de que deseja excluir este veículo?</p>
 
-    <div>
-        <label asp-for="Marca">Marca:</label>
-        <span>@Model.Marca</span>
+      <table class="table">
+          <tr>
+              <td><label asp-for="Marca">Marca:</label></td>
+              <td><span>@Model.Marca</span></td>
+          </tr>
+          <tr>
+              <td><label asp-for="Modelo">Modelo:</label></td>
+              <td><span>@Model.Modelo</span></td>
+          </tr>
+          <tr>
+              <td><label asp-for="Ano">Ano:</label></td>
+              <td><span>@Model.Ano</span></td>
+          </tr>
+          <tr>
+              <td><label asp-for="Cor">Cor:</label></td>
+              <td><span>@Model.Cor</span></td>
+          </tr>
+          <tr>
+              <td><label asp-for="Preco">Preço:</label></td>
+              <td><span>@Model.Preco</span></td>
+          </tr>
+      </table>
+    <div class="align-content-center">
+    <button type="submit" class="btn btn-primary btn-md w-25 btn-block mx-auto" value="Confirmar">Confirmar</button>
     </div>
-    
-    <div>
-        <label asp-for="Modelo">Modelo:</label>
-        <span>@Model.Modelo</span>
-    </div>
-    
-    <div>
-        <label asp-for="Ano">Ano:</label>
-        <span>@Model.Ano</span>
-    </div>
-    
-    <div>
-        <label asp-for="Cor">Cor:</label>
-        <span>@Model.Cor</span>
-    </div>
-    
-    <div>
-        <label asp-for="Preco">Preço:</label>
-        <span>@Model.Preco</span>
-    </div>
-    
-    <div>
-        <button type="submit" class="btn btn-primary" value="Confirmar">Confirmar</button>
-        <button type="submit" class="btn btn-danger" value="Cancelar" asp-controller="Carro" asp-action="Index">Cancelar</button>
+    <div class="align-items-lg-baseline">
+        <button type="submit" class="btn btn-outline-danger  w-25 btn-md btn-block mt-3 mx-auto" value="Cancelar" asp-controller="Carro" asp-action="Index">Cancelar</button>
 
+    
     </div>
 </form>

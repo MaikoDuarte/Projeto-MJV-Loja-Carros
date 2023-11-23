@@ -1,36 +1,50 @@
 ﻿@model List<loja_carros.Models.Carro   >
-<div>
-    <h1>Cadastrar um carro: </h1>
+<div class="container ali mt-4">
+    <h2>Cadastrar Veículo </h2>
 </div>
-<form asp-controller="Carro" asp-action="EnviarCarro" method="post" id="meuForm">
+<div class="container position-relative">
+<div class="row align-items-center">
+    <div class="col-md-6">
+        <form asp-controller="Carro" asp-action="EnviarCarro" method="post" id="meuForm">
 
-    <div>
-       
-        <label>Marca:</label>
-        <input type="text" name="Marca"/>
-    </div>
-    <div>
-        <label>Modelo:</label>
-        <input type="text" name="Modelo" />
-    </div>
-    <div>
-        <label>Ano:</label>
-        <input type="text" name="Ano" />
-    </div>
-    <div>
-        <label>Cor:</label>
-        <input type="text" name="Cor" />
-    </div>
-        <div>
-            <label>Preço:</label>
-            <input type="text" name="Preco" />
-        </div>
+            <div class="form-group row-cols-2 mb-3">
 
-    <div>
-        <input type="submit" value="Salvar" />
-    </div>
-</form>
+                <label>Marca</label>
+                <input type="text" name="Marca" class="form-control-sm" placeholder="Digite a Marca"/>
+            </div>
+            <div class="form-group row-cols-2 mb-3">
+                <label>Modelo</label>
+                <input type="text" name="Modelo" class="form-control-sm" placeholder="Digite o Modelo"/>
+            </div>
+            <div class="form-group row-cols-2 mb-3">
+                <label>Ano</label>
+                <input type="text" name="Ano" class="form-control-sm" placeholder="Digite o Ano"/>
+            </div>
+            <div class="form-group row-cols-2 mb-3">
+                <label>Cor</label>
+                <input type="text" name="Cor" class="form-control-sm" placeholder="Digite a Cor"/>
+            </div>
+            <div class="form-group row-cols-2 mb-4">
+                <label>Preço</label>
+                <input type="text" name="Preco" class="form-control-sm" placeholder="Digite o Preço"/>
+            </div>
+            
+            <div>
 
+            <div class="align-items-lg-baseline">
+
+                <button type="submit" class="btn btn-primary btn-md w-50 btn-block mx-auto" value="Confirmar">Salvar</button>
+                </div>
+                <div class="flex-column">
+                    <button type="submit" class="btn btn-outline-danger btn-md w-50 btn-block mt-3" value="Cancelar" asp-controller="Carro" asp-action="Index">Cancelar</button>
+                
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+</div>
 
 
 @if (ViewBag.Mensagem != null)

@@ -1,41 +1,54 @@
 ﻿@model loja_carros.Models.Carro
-
-<h1>Atualizar Carro</h1>
-
-<form asp-controller="Carro" asp-action="AtualizarCarro" method="post">
-        <div>
-            <label asp-for="Id">Id:</label>
-            <input asp-for="Id" />
-        </div>
+<div class="align-row justify-content-center-lg-center">
+<div class="container ali mt-4">
+<h2>Editar Veículo</h2>
+</div>
+<div class="container position-relative">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <form asp-controller="Carro" asp-action="AtualizarCarro" method="post">
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Id">Id</label>
+                    <input type="text" asp-for="Id" class="form-control-sm" placeholder="Digite o Id" />
+                </div>
     
-    <div>
-        <label asp-for="Marca">Marca:</label>
-        <input asp-for="Marca" />
-    </div>
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Marca">Marca</label>
+                    <input asp-for="Marca" class="form-control-sm" placeholder="Digite a Marca" />
+                </div>
     
-    <div>
-        <label asp-for="Modelo">Modelo:</label>
-        <input asp-for="Modelo" />
-    </div>
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Modelo">Modelo</label>
+                    <input asp-for="Modelo" class="form-control-sm" placeholder="Digite o Modelo" />
+                </div>
     
-    <div>
-        <label asp-for="Ano">Ano:</label>
-        <input asp-for="Ano" />
-    </div>
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Ano">Ano</label>
+                    <input asp-for="Ano" class="form-control-sm" placeholder="Digite o Ano" />
+                </div>
     
-    <div>
-        <label asp-for="Cor">Cor:</label>
-        <input asp-for="Cor" />
-    </div>
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Cor">Cor</label>
+                    <input asp-for="Cor" class="form-control-sm" placeholder="Digite a Cor" />
+                </div>
     
-    <div>
-        <label asp-for="Preco">Preço:</label>
-        <input asp-for="Preco" />
-    </div>
+                <div class="form-group row-cols-2 mb-3">
+                    <label asp-for="Preco">Preço</label>
+                    <input asp-for="Preco" class="form-control-sm" placeholder="Digite o Preço" />
+                </div>
     
-    <div>
+                <div class="align-items-lg-baseline">
         
-        <button type="submit" class="btn btn-primary" value="Confirmar">Confirmar</button>
-        <button type="submit" class="btn btn-danger" value="Cancelar" asp-controller="Carro" asp-action="Index">Cancelar</button>
+                    <button type="submit" class="btn btn-primary btn-md w-50 btn-block mx-auto" value="Confirmar">Confirmar</button>
+                </div>
+                <div class="flex-column">
+                    <button type="submit" class="btn btn-outline-danger btn-md w-50 btn-block mt-3" value="Cancelar" asp-controller="Carro" asp-action="Index">Cancelar</button>
+                
+                </div>
+            </form>
+    
+        </div>
     </div>
-</form>
+</div>
+
+</div>
