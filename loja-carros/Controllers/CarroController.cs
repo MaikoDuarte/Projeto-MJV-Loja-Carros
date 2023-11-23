@@ -5,10 +5,10 @@ using System;
 
 public class CarroController : Controller
 {
-    private readonly PostgresDAL _postgresDal;
+    private readonly IPostgresDal _postgresDal;
     
 
-    public CarroController(PostgresDAL postgresDal)
+    public CarroController(IPostgresDal postgresDal)
     {
         _postgresDal = postgresDal;
     }

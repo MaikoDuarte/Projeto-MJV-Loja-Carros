@@ -3,7 +3,7 @@ using loja_carros.Models;
 
 namespace loja_carros.Dal
 {
-    public class PostgresDAL
+    public class PostgresDAL: IPostgresDal
     {
         private string strConnection = "Host=127.0.0.1;Port=5433;Username=postgres;Password=1234";
         private string dbName = "loja_carros";
