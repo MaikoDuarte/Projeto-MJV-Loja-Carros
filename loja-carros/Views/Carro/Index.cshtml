@@ -10,7 +10,7 @@
         <th scope="col">Marca</th>
         <th scope="col">Ano</th>
         <th scope="col">Cor</th>
-        <th scope="col">Preço</th>
+        <th scope="col">Valor</th>
         <th scope="col">Ações</th>
     </tr>
     </thead>
@@ -24,7 +24,8 @@
            
             <td>@carro.Ano</td>
             <td>@carro.Cor</td>
-            <td>@carro.Preco</td>
+            <td>@string.Format(new System.Globalization.CultureInfo("pt-BR"), "{0:C0}", carro.Preco)</td>
+
             <td>
 <div class="btn-group" role="group" aria-label="Ações">
     <div class="btn-group" role="group" aria-label="Ações">

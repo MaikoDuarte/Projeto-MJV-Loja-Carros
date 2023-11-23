@@ -7,10 +7,12 @@ public class CarroController : Controller
 {
     private readonly IPostgresDal _postgresDal;
     
+    
 
     public CarroController(IPostgresDal postgresDal)
     {
         _postgresDal = postgresDal;
+        
     }
 
     public IActionResult Index()

@@ -24,7 +24,7 @@ namespace loja_carros.Dal
                 Console.WriteLine("Conexão aberta");
 
                 NpgsqlCommand sqlCommand = new NpgsqlCommand();
-                sqlCommand.CommandText = $"SELECT * FROM {tableName}";
+                sqlCommand.CommandText = "SELECT * FROM carros";
                 sqlCommand.CommandType = System.Data.CommandType.Text;
                 sqlCommand.Connection = conn;
 
@@ -69,7 +69,7 @@ namespace loja_carros.Dal
 
                     NpgsqlCommand sqlCommand = new NpgsqlCommand();
                     sqlCommand.CommandText =
-                        $"INSERT INTO {tableName} (marca, modelo, ano, cor, preco) VALUES (@marca, @modelo, @ano, @cor, @preco)";
+                        "INSERT INTO carros (marca, modelo, ano, cor, preco) VALUES (@marca, @modelo, @ano, @cor, @preco)";
                     sqlCommand.CommandType = System.Data.CommandType.Text;
                     sqlCommand.Connection = conn;
                     
@@ -106,7 +106,7 @@ namespace loja_carros.Dal
                     Console.WriteLine("Conexão aberta");
 
                     NpgsqlCommand sqlCommand = new NpgsqlCommand();
-                    sqlCommand.CommandText = $"DELETE FROM {tableName} WHERE id = @id";
+                    sqlCommand.CommandText = "DELETE FROM carros WHERE id = @id";
                     sqlCommand.CommandType = System.Data.CommandType.Text;
                     sqlCommand.Connection = conn;
 
@@ -137,7 +137,7 @@ namespace loja_carros.Dal
                 Console.WriteLine("Conexão aberta");
 
                 NpgsqlCommand sqlCommand = new NpgsqlCommand();
-                sqlCommand.CommandText = $"select * from {tableName} where id=@id"; 
+                sqlCommand.CommandText = "select * from carros where id=@id"; 
                 sqlCommand.Parameters.AddWithValue("@id", id);
                 sqlCommand.CommandType = System.Data.CommandType.Text;
                 sqlCommand.Connection = conn;
@@ -179,7 +179,7 @@ namespace loja_carros.Dal
 
                     NpgsqlCommand sqlCommand = new NpgsqlCommand();
                     sqlCommand.CommandText =
-                        $@"UPDATE {tableName} SET marca = @marca, modelo = @modelo, ano = @ano, cor = @cor, preco = @preco WHERE id = @id";
+                        @"UPDATE carros SET marca = @marca, modelo = @modelo, ano = @ano, cor = @cor, preco = @preco WHERE id = @id";
                     sqlCommand.CommandType = System.Data.CommandType.Text;
                     sqlCommand.Connection = conn;
 
