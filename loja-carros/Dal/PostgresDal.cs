@@ -3,15 +3,17 @@ using loja_carros.Models;
 
 namespace loja_carros.Dal
 {
-    public class PostgresDAL: IPostgresDal
+    public class PostgresDal : IPostgresDal
     {
-        private string strConnection = "Host=127.0.0.1;Port=5433;Username=postgres;Password=1234";
-        private string dbName = "loja_carros";
-        private string tableName = "carros";
+        private readonly string strConnection;
 
-        public PostgresDAL()
+        private readonly IConfiguration _configuration;
+
+        public PostgresDal(IConfiguration configuration)
         {
-            strConnection += $";Database={dbName}";
+            _configuration = configuration;
+            strConnection = _configuration.GetConnectionString("conn_postgres");
+            
         }
 
         public List<Carro> ListarCarros()
@@ -35,7 +37,7 @@ namespace loja_carros.Dal
                     Carro carro = new Carro();
                     if (!reader.IsDBNull(0))
                         carro.Id = reader.GetInt32(0);
-                    
+
                     if (!reader.IsDBNull(1))
                         carro.Marca = reader.GetString(1);
 
@@ -72,8 +74,7 @@ namespace loja_carros.Dal
                         "INSERT INTO carros (marca, modelo, ano, cor, preco) VALUES (@marca, @modelo, @ano, @cor, @preco)";
                     sqlCommand.CommandType = System.Data.CommandType.Text;
                     sqlCommand.Connection = conn;
-                    
-                    
+
                     sqlCommand.Parameters.AddWithValue("@marca", marca);
                     sqlCommand.Parameters.AddWithValue("@modelo", modelo);
                     sqlCommand.Parameters.AddWithValue("@ano", ano);
@@ -207,5 +208,5 @@ namespace loja_carros.Dal
         }
 
     }
+    }
 
-}

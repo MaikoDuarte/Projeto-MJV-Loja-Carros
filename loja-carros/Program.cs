@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 var connString = builder.Configuration.GetConnectionString("conn_postgres");
 var tableName = builder.Configuration["Database:table_name"];
-builder.Services.AddScoped<IPostgresDal, PostgresDAL>();
+builder.Services.AddScoped<IPostgresDal, PostgresDal>();
 
 var app = builder.Build();
 
